@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gonzalo Díaz - Asesor Profesional de Salud</title>
-    <meta name="description" content="Asesoría profesional y transparente para Planes de Salud. Fonasa e Isapre Nueva Masvida - Encuentra el mejor plan para ti.">
+    <meta name="description" content="¿Estás pagando de más en tu plan de salud? Descúbrelo gratis. Asesoría profesional y transparente para Fonasa e Isapre Nueva Masvida.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
             --azul-oscuro: #0a1628;
@@ -32,7 +32,7 @@
             line-height: 1.6;
         }
 
-        h1, h2, h3 {
+        h1, h2, h3, h4 {
             font-family: 'Cormorant Garamond', serif;
             font-weight: 500;
         }
@@ -40,7 +40,7 @@
         /* Header */
         header {
             background: var(--azul-oscuro);
-            padding: 1.5rem 2rem;
+            padding: 1rem 2rem;
             position: fixed;
             width: 100%;
             top: 0;
@@ -97,14 +97,14 @@
 
         .hero h1 {
             color: var(--blanco);
-            font-size: 3.5rem;
+            font-size: 3rem;
             margin-bottom: 1.5rem;
             line-height: 1.2;
         }
 
         .hero p {
             color: var(--gris-claro);
-            font-size: 1.25rem;
+            font-size: 1.15rem;
             font-weight: 300;
             margin-bottom: 2.5rem;
             max-width: 600px;
@@ -124,12 +124,321 @@
             transition: all 0.3s ease;
             border: none;
             cursor: pointer;
+            margin: 0.5rem;
         }
 
         .hero-cta:hover {
             background: var(--dorado-claro);
             transform: translateY(-2px);
             box-shadow: 0 10px 30px rgba(201, 162, 39, 0.3);
+        }
+
+        .hero-cta-secondary {
+            background: transparent;
+            border: 2px solid var(--dorado);
+            color: var(--dorado);
+        }
+
+        .hero-cta-secondary:hover {
+            background: var(--dorado);
+            color: var(--azul-oscuro);
+        }
+
+        .hero-note {
+            color: var(--texto-gris);
+            font-size: 0.9rem;
+            margin-top: 1.5rem;
+        }
+
+        .hero-note span {
+            color: #22c55e;
+        }
+
+        /* Pain Trigger Section */
+        .dolor {
+            padding: 4rem 2rem;
+            background: var(--azul-oscuro);
+            text-align: center;
+        }
+
+        .dolor h2 {
+            color: var(--blanco);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .dolor h2 span {
+            color: var(--dorado);
+        }
+
+        .dolor-list {
+            max-width: 600px;
+            margin: 0 auto;
+            list-style: none;
+        }
+
+        .dolor-list li {
+            color: var(--gris-claro);
+            font-size: 1.1rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .dolor-list li:last-child {
+            border-bottom: none;
+        }
+
+        .dolor-cta {
+            display: inline-block;
+            margin-top: 2rem;
+            color: var(--dorado);
+            font-weight: 500;
+            text-decoration: underline;
+            font-size: 1.1rem;
+        }
+
+        /* Solution Section */
+        .solucion {
+            padding: 5rem 2rem;
+            background: var(--blanco);
+        }
+
+        .solucion-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .solucion h2 {
+            font-size: 2.5rem;
+            color: var(--azul-oscuro);
+            margin-bottom: 2rem;
+        }
+
+        .solucion h2 span {
+            color: var(--dorado);
+        }
+
+        .solucion-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .solucion-item {
+            padding: 1.5rem;
+        }
+
+        .solucion-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--dorado);
+        }
+
+        .solucion-item h3 {
+            font-size: 1.25rem;
+            color: var(--azul-oscuro);
+            margin-bottom: 0.5rem;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+        }
+
+        .solucion-item p {
+            color: var(--texto-gris);
+            font-size: 0.95rem;
+        }
+
+        /* Diferenciador Section */
+        .diferenciador-seccion {
+            padding: 4rem 2rem;
+            background: var(--gris-claro);
+            text-align: center;
+        }
+
+        .diferenciador-seccion h2 {
+            font-size: 2rem;
+            color: var(--azul-oscuro);
+            margin-bottom: 1rem;
+        }
+
+        .diferenciador-seccion h2 span {
+            color: var(--dorado);
+        }
+
+        .diferenciador-seccion > p {
+            color: var(--texto-gris);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .no-robot {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .no-robot-item {
+            text-align: center;
+            min-width: 150px;
+        }
+
+        .no-robot-item span {
+            display: block;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .no-robot-item p {
+            color: var(--texto-gris);
+            font-size: 0.9rem;
+        }
+
+        /* Microcompromiso */
+        .microcompromiso {
+            padding: 4rem 2rem;
+            background: var(--azul-oscuro);
+            text-align: center;
+        }
+
+        .microcompromiso h2 {
+            color: var(--blanco);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .microcompromiso-steps {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .microcompromiso-step {
+            background: var(--azul-medio);
+            padding: 1.5rem 2rem;
+            border-radius: 8px;
+            min-width: 180px;
+        }
+
+        .microcompromiso-step span {
+            display: block;
+            font-size: 2rem;
+            color: var(--dorado);
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .microcompromiso-step p {
+            color: var(--gris-claro);
+            font-size: 0.95rem;
+        }
+
+        /* Prueba Social */
+        .prueba-social {
+            padding: 5rem 2rem;
+            background: var(--blanco);
+        }
+
+        .prueba-social h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--azul-oscuro);
+            margin-bottom: 3rem;
+        }
+
+        .prueba-social h2 span {
+            color: var(--dorado);
+        }
+
+        .testimonio {
+            max-width: 700px;
+            margin: 0 auto;
+            background: var(--gris-claro);
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--dorado);
+        }
+
+        .testimonio p {
+            font-style: italic;
+            color: var(--texto-gris);
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .testimonio-author {
+            margin-top: 1rem;
+            color: var(--azul-oscuro);
+            font-weight: 500;
+        }
+
+        /* CTA Section */
+        .cta-fuerte {
+            padding: 4rem 2rem;
+            background: var(--azul-medio);
+            text-align: center;
+        }
+
+        .cta-fuerte h2 {
+            color: var(--blanco);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-fuerte h2 span {
+            color: var(--dorado);
+        }
+
+        .cta-fuerte p {
+            color: var(--gris-claro);
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Urgencia */
+        .urgencia {
+            padding: 3rem 2rem;
+            background: linear-gradient(135deg, var(--azul-oscuro) 0%, var(--azul-medio) 100%);
+            text-align: center;
+        }
+
+        .urgencia p {
+            color: var(--gris-claro);
+            font-size: 1.1rem;
+        }
+
+        .urgencia p span {
+            color: var(--dorado);
+            font-weight: 600;
+        }
+
+        /* Cierre Humano */
+        .cierre-humano {
+            padding: 5rem 2rem;
+            background: var(--blanco);
+            text-align: center;
+        }
+
+        .cierre-humano h2 {
+            font-size: 2.5rem;
+            color: var(--azul-oscuro);
+            margin-bottom: 1rem;
+        }
+
+        .cierre-humano h2 span {
+            color: var(--dorado);
+        }
+
+        .cierre-humano > p {
+            color: var(--texto-gris);
+            font-size: 1.15rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
         }
 
         /* Comparativa Section */
@@ -165,11 +474,11 @@
         }
 
         .plan-card.fonasa {
-            border-top: 4px solid var(--dorado);
+            border-top: 4px solid #4a90d9;
         }
 
         .plan-card.isapre {
-            border-top: 4px solid #4a90d9;
+            border-top: 4px solid var(--dorado);
         }
 
         .plan-header {
@@ -178,11 +487,11 @@
         }
 
         .plan-card.fonasa .plan-header {
-            background: var(--dorado);
+            background: #4a90d9;
         }
 
         .plan-card.isapre .plan-header {
-            background: #4a90d9;
+            background: var(--dorado);
         }
 
         .plan-header h3 {
@@ -414,7 +723,31 @@
         /* Responsive */
         @media (max-width: 768px) {
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .hero-cta {
+                display: block;
+                margin: 0.5rem auto;
+                max-width: 280px;
+            }
+
+            .solucion-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .no-robot {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .microcompromiso-steps {
+                flex-direction: column;
+                align-items: center;
             }
 
             .comparativa-grid {
@@ -455,18 +788,181 @@
     <header>
         <div class="header-content">
             <div class="logo">Gonzalo <span>Díaz</span></div>
-            <a href="https://wa.me/56965107706?text=Hola%20Gonzalo,%20quiero%20asesor%C3%ADa%20sobre%20planes%20de%20salud." class="header-cta" target="_blank">WhatsApp</a>
+            <a href="https://wa.me/56965107706?text=Hola%20Gonzalo,%20quiero%20revisar%20si%20estoy%20pagando%20de%20m%C3%A1s%20en%20mi%20plan" class="header-cta" target="_blank">WhatsApp</a>
         </div>
     </header>
 
+    <!-- HERO: Directo a convertir -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Cambia tu plan de salud con asesoría profesional y transparente</h1>
-            <p>Asesoría profesional, transparente y cercana, con una experiencia de servicio de excelencia.</p>
-            <a href="https://wa.me/56965107706?text=Hola%20Gonzalo,%20quiero%20asesor%C3%ADa%20sobre%20planes%20de%20salud." class="hero-cta" target="_blank">Cotiza tu plan ahora</a>
+            <h1>¿Estás pagando de más en tu plan de salud?</h1>
+            <p>Descúbrelo en minutos y recibe una opción mejor, clara y sin letra chica.</p>
+            <a href="https://wa.me/56965107706?text=Hola%20Gonzalo,%20quiero%20revisar%20si%20estoy%20pagando%20de%20m%C3%A1s%20en%20mi%20plan" class="hero-cta" target="_blank">Quiero saber si estoy pagando de más</a>
+            <a href="#contacto" class="hero-cta hero-cta-secondary">Evaluación gratuita</a>
+            <p class="hero-note"><span>✔</span> Respuesta inmediata por WhatsApp &nbsp;|&nbsp; <span>✔</span> Asesoría gratuita</p>
         </div>
     </section>
 
+    <!-- GATILLO DE DOLOR -->
+    <section class="dolor">
+        <h2>La mayoría de las personas paga de más <span>sin saberlo</span></h2>
+        <ul class="dolor-list">
+            <li>Planes mal elegidos</li>
+            <li>Coberturas que no usan</li>
+            <li>Costos ocultos</li>
+        </ul>
+        <a href="https://wa.me/56965107706?text=Hola%20Gonzalo,%20quiero%20revisar%20si%20estoy%20pagando%20de%20m%C3%A1s%20en%20mi%20plan" class="dolor-cta">👉 Podrías estar perdiendo dinero todos los meses</a>
+    </section>
+
+    <!-- SOLUCIÓN RÁPIDA -->
+    <section class="solucion">
+        <div class="solucion-content">
+            <h2>Yo reviso tu caso y te digo claramente:</h2>
+            <div class="solucion-grid">
+                <div class="solucion-item">
+                    <div class="solucion-icon">✓</div>
+                    <h3>Si tu plan actual te conviene</h3>
+                    <p>Análisis honesto de tu situación actual</p>
+                </div>
+                <div class="solucion-item">
+                    <div class="solucion-icon">↓</div>
+                    <h3>Si puedes pagar menos</h3>
+                    <p>Opciones para optimizar tu presupuesto</p>
+                </div>
+                <div class="solucion-item">
+                    <div class="solucion-icon">★</div>
+                    <h3>Qué opción es mejor para ti</h3>
+                    <p>Recomendación personalizada</p>
+                </div>
+            </div>
+            <p style="color: var(--texto-gris); font-size: 1.1rem;"><strong>Sin vueltas. Sin presión.</strong></p>
+        </div>
+    </section>
+
+    <!-- BENEFICIO PRINCIPAL -->
+    <section class="diferenciador-seccion">
+        <h2>En menos de unos minutos puedes:</h2>
+        <div class="no-robot">
+            <div class="no-robot-item">
+                <span>🔍</span>
+                <p>Saber si estás pagando de más</p>
+            </div>
+            <div class="no-robot-item">
+                <span>📖</span>
+                <p>Entender tu plan de verdad</p>
+            </div>
+            <div class="no-robot-item">
+                <span>📊</span>
+                <p>Ver una mejor alternativa</p>
+            </div>
+        </div>
+        <p style="margin-top: 2rem; color: var(--texto-gris);">👉 Todo explicado simple.</p>
+    </section>
+
+    <!-- DIFERENCIADOR FUERTE -->
+    <section class="solucion" style="background: var(--gris-claro);">
+        <div class="solucion-content">
+            <h2>Esto no es una cotización automática</h2>
+            <p style="color: var(--texto-gris); font-size: 1.15rem; margin-bottom: 2rem;">Es asesoría real.</p>
+            <div class="no-robot">
+                <div class="no-robot-item">
+                    <span>👤</span>
+                    <p>Hablas conmigo directamente</p>
+                </div>
+                <div class="no-robot-item">
+                    <span>🚫</span>
+                    <p>No robots</p>
+                </div>
+                <div class="no-robot-item">
+                    <span>📝</span>
+                    <p>No respuestas genéricas</p>
+                </div>
+                <div class="no-robot-item">
+                    <span>💡</span>
+                    <p>No información confusa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MICROCOMPROMISO -->
+    <section class="microcompromiso">
+        <h2>Solo necesitas:</h2>
+        <div class="microcompromiso-steps">
+            <div class="microcompromiso-step">
+                <span>1</span>
+                <p>Enviar un mensaje</p>
+            </div>
+            <div class="microcompromiso-step">
+                <span>2</span>
+                <p>Contar tu situación</p>
+            </div>
+            <div class="microcompromiso-step">
+                <span>3</span>
+                <p>Recibir tu recomendación</p>
+            </div>
+        </div>
+        <a href="https://wa.me/56965107706?text=Hola%20Gonzalo,%20quiero%20revisar%20mi%20plan" class="hero-cta" target="_blank">👉 Así de simple</a>
+    </section>
+
+    <!-- PRUEBA SOCIAL -->
+    <section class="prueba-social">
+        <h2>Personas como tú <span>ya están pagando menos</span> y mejorando su cobertura</h2>
+        <div class="testimonio">
+            <p>"Pensé que era complicado, pero fue rápido y claro. Ahora pago menos."</p>
+            <p class="testimonio-author">— Cliente satisfecho</p>
+        </div>
+    </section>
+
+    <!-- CTA FUERTE -->
+    <section class="cta-fuerte" id="contacto">
+        <h2>Revisa tu plan ahora <span>(es gratis)</span></h2>
+        <p>Sin compromiso. Sin letra chica.</p>
+        <a href="https://wa.me/56965107706?text=Hola%20Gonzalo,%20quiero%20mi%20evaluaci%C3%B3n%20gratuita" class="hero-cta" target="_blank">Hablar por WhatsApp</a>
+    </section>
+
+    <!-- FORMULARIO -->
+    <section class="contacto">
+        <h2 class="section-title">O escríbenos <span>directamente</span></h2>
+        <form class="formulario" id="contacto-form">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" required placeholder="+56 9 XXXX XXXX">
+            </div>
+            <div class="form-group">
+                <label for="edad">Edad <span>(opcional)</span></label>
+                <input type="number" id="edad" name="edad" placeholder="Tu edad">
+            </div>
+            <div class="form-group">
+                <label for="sistema">Sistema actual</label>
+                <select id="sistema" name="sistema">
+                    <option value="">Selecciona una opción</option>
+                    <option value="fonasa">Fonasa</option>
+                    <option value="isapre">Isapre</option>
+                    <option value="sin-sistema">Sin sistema de salud</option>
+                </select>
+            </div>
+            <button type="submit" class="submit-btn">Enviar por WhatsApp</button>
+        </form>
+    </section>
+
+    <!-- URGENCIA SUAVE -->
+    <section class="urgencia">
+        <p>Mientras antes revises tu plan, <span>antes puedes dejar de pagar de más</span></p>
+    </section>
+
+    <!-- CIERRE HUMANO -->
+    <section class="cierre-humano">
+        <h2>No se trata de venderte un plan</h2>
+        <p>Se trata de ayudarte a elegir bien.</p>
+        <a href="https://wa.me/56965107706?text=Hola%20Gonzalo,%20quiero%20asesor%C3%ADa%20sobre%20mi%20plan%20de%20salud" class="hero-cta" target="_blank" style="display: inline-block; margin-top: 2rem;">👉 Escríbeme y lo vemos juntos</a>
+    </section>
+
+    <!-- COMPARATIVA -->
     <section class="comparativa">
         <h2 class="section-title"><span>Fonasa</span> vs <span>Isapre</span></h2>
         <div class="comparativa-grid">
@@ -501,6 +997,7 @@
         </div>
     </section>
 
+    <!-- SOBRE MÍ -->
     <section class="sobre-mi">
         <div class="sobre-mi-content">
             <div class="foto-container">
@@ -529,34 +1026,6 @@
         </div>
     </section>
 
-    <section class="contacto">
-        <h2 class="section-title">¿Hablamos?</h2>
-        <form class="formulario" id="contacto-form">
-            <div class="form-group">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
-            </div>
-            <div class="form-group">
-                <label for="telefono">Teléfono</label>
-                <input type="tel" id="telefono" name="telefono" required placeholder="+56 9 XXXX XXXX">
-            </div>
-            <div class="form-group">
-                <label for="edad">Edad <span>(opcional)</span></label>
-                <input type="number" id="edad" name="edad" placeholder="Tu edad">
-            </div>
-            <div class="form-group">
-                <label for="sistema">Sistema actual</label>
-                <select id="sistema" name="sistema">
-                    <option value="">Selecciona una opción</option>
-                    <option value="fonasa">Fonasa</option>
-                    <option value="isapre">Isapre</option>
-                    <option value="sin-sistema">Sin sistema de salud</option>
-                </select>
-            </div>
-            <button type="submit" class="submit-btn">Enviar por WhatsApp</button>
-        </form>
-    </section>
-
     <footer>
         <div class="footer-content">
             <p>¿Prefieres contactarte directamente?</p>
@@ -575,7 +1044,7 @@
             const edad = document.getElementById('edad').value;
             const sistema = document.getElementById('sistema').value;
             
-            let mensaje = `Hola Gonzalo, quiero asesoría sobre planes de salud.%0A%0A`;
+            let mensaje = `Hola Gonzalo, quiero revisar mi plan de salud.%0A%0A`;
             mensaje += `Nombre: ${nombre}%0A`;
             mensaje += `Teléfono: ${telefono}%0A`;
             if (edad) mensaje += `Edad: ${edad}%0A`;
