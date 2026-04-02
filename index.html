@@ -390,6 +390,50 @@
             font-weight: 500;
         }
 
+        /* Beneficios Nueva Masvida */
+        .beneficios-nm {
+            padding: 5rem 2rem;
+            background: var(--blanco);
+            text-align: center;
+        }
+
+        .beneficios-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .beneficio-item {
+            padding: 1.5rem;
+            background: var(--gris-claro);
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .beneficio-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .beneficio-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .beneficio-item h3 {
+            font-size: 1.1rem;
+            color: var(--azul-oscuro);
+            margin-bottom: 0.5rem;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+        }
+
+        .beneficio-item p {
+            color: var(--texto-gris);
+            font-size: 0.9rem;
+        }
+
         /* CTA Section */
         .cta-fuerte {
             padding: 4rem 2rem;
@@ -488,7 +532,7 @@
         }
 
         .plan-card.fonasa {
-            border-top: 4px solid #6b7280;
+            border-top: 4px solid #4a90d9;
         }
 
         .plan-card.isapre {
@@ -501,7 +545,7 @@
         }
 
         .plan-card.fonasa .plan-header {
-            background: #6b7280;
+            background: #4a90d9;
         }
 
         .plan-card.isapre .plan-header {
@@ -790,6 +834,10 @@
                 grid-template-columns: 1fr;
             }
 
+            .beneficios-grid {
+                grid-template-columns: 1fr;
+            }
+
             .no-robot {
                 flex-direction: column;
                 align-items: center;
@@ -975,6 +1023,43 @@
             <div class="testimonio">
                 <p>"Me ayudaron a encontrar un plan acorde a mi presupuesto. En menos de 48 horas hice el cambio."</p>
                 <p class="testimonio-author">— Carolina R., Antofagasta</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFICIOS NUEVA MASVIDA -->
+    <section class="beneficios-nm">
+        <h2 class="section-title">¿Por qué afiliarte a <span>Isapre Nueva Masvida</span>?</h2>
+        <div class="beneficios-grid">
+            <div class="beneficio-item">
+                <div class="beneficio-icon">🏥</div>
+                <h3>Cobertura hospitalaria</h3>
+                <p>Hasta 100% y ambulatoria hasta 80%</p>
+            </div>
+            <div class="beneficio-item">
+                <div class="beneficio-icon">🩺</div>
+                <h3>Cirugías con costo conocido</h3>
+                <p>Paquetes quirúrgicos</p>
+            </div>
+            <div class="beneficio-item">
+                <div class="beneficio-icon">🚑</div>
+                <h3>Urgencia integral</h3>
+                <p>Copago conocido</p>
+            </div>
+            <div class="beneficio-item">
+                <div class="beneficio-icon">💸</div>
+                <h3>Bonos costo $0</h3>
+                <p>Para exámenes en amplia red</p>
+            </div>
+            <div class="beneficio-item">
+                <div class="beneficio-icon">🎁</div>
+                <h3>Beneficios exclusivos</h3>
+                <p>En farmacias, ópticas, laboratorios y dental</p>
+            </div>
+            <div class="beneficio-item">
+                <div class="beneficio-icon">📲</div>
+                <h3>Atención personalizada</h3>
+                <p>Por Sucursal Virtual, App, WhatsApp y video</p>
             </div>
         </div>
     </section>
