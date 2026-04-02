@@ -667,7 +667,8 @@
         }
 
         .form-group input,
-        .form-group select {
+        .form-group select,
+        .form-group textarea {
             width: 100%;
             padding: 0.875rem 1rem;
             border: 1px solid #e5e5e5;
@@ -675,17 +676,23 @@
             font-size: 1rem;
             font-family: 'Inter', sans-serif;
             transition: border-color 0.3s ease;
+            background: var(--blanco);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 80px;
         }
 
         .form-group input:focus,
-        .form-group select:focus {
+        .form-group select:focus,
+        .form-group textarea:focus {
             outline: none;
             border-color: var(--azul-claro);
         }
 
         .form-group select {
             cursor: pointer;
-            background: var(--blanco);
         }
 
         .submit-btn {
@@ -946,30 +953,93 @@
 
     <!-- FORMULARIO -->
     <section class="contacto">
-        <h2 class="section-title">O escríbenos <span>directamente</span></h2>
+        <h2 class="section-title">Obtén tu cotización <span>en minutos</span></h2>
         <form class="formulario" id="contacto-form">
             <div class="form-group">
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required placeholder="tu@email.com">
             </div>
             <div class="form-group">
                 <label for="telefono">Teléfono</label>
                 <input type="tel" id="telefono" name="telefono" required placeholder="+56 9 XXXX XXXX">
             </div>
             <div class="form-group">
-                <label for="edad">Edad <span>(opcional)</span></label>
-                <input type="number" id="edad" name="edad" placeholder="Tu edad">
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" name="edad" required placeholder="Tu edad" min="18" max="100">
             </div>
             <div class="form-group">
-                <label for="sistema">Sistema actual</label>
-                <select id="sistema" name="sistema">
+                <label for="rut">RUT</label>
+                <input type="text" id="rut" name="rut" placeholder="12.345.678-5">
+            </div>
+            <div class="form-group">
+                <label for="isapre">Isapre Actual</label>
+                <select id="isapre" name="isapre">
                     <option value="">Selecciona una opción</option>
                     <option value="fonasa">Fonasa</option>
-                    <option value="isapre">Isapre</option>
+                    <option value="banmedica">Banmédica S.A.</option>
+                    <option value="isalud">Isalud Ltda.</option>
+                    <option value="colmena">Colmena Golden Cross S.A.</option>
+                    <option value="consalud">Consalud</option>
+                    <option value="cruzblanca">Cruz Blanca S.A.</option>
+                    <option value="cruzdelnorte">Cruz del Norte Ltda.</option>
+                    <option value="nuevamasvida">Nueva Masvida S.A.</option>
+                    <option value="fundacion">Fundación Ltda.</option>
+                    <option value="vidatres">Vida Tres S.A.</option>
+                    <option value="esencial">Esencial S.A.</option>
                     <option value="sin-sistema">Sin sistema de salud</option>
                 </select>
             </div>
-            <button type="submit" class="submit-btn">Enviar por WhatsApp</button>
+            <div class="form-group">
+                <label for="sueldo">Rango de sueldo</label>
+                <select id="sueldo" name="sueldo">
+                    <option value="">Selecciona una opción</option>
+                    <option value="900-1400">$900.000 - $1.400.000</option>
+                    <option value="1400-2500">$1.400.000 - $2.500.000</option>
+                    <option value="2500-mas">$2.500.000 o más</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="cargas">Cantidad de Cargas</label>
+                <select id="cargas" name="cargas">
+                    <option value="0">Sin Cargas</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 o más</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="region">Región</label>
+                <select id="region" name="region">
+                    <option value="">Selecciona tu Región</option>
+                    <option value="arica">Región de Arica y Parinacota</option>
+                    <option value="tarapaca">Región de Tarapacá</option>
+                    <option value="antofagasta">Región de Antofagasta</option>
+                    <option value="atacama">Región de Atacama</option>
+                    <option value="coquimbo">Región de Coquimbo</option>
+                    <option value="valparaiso">Región de Valparaíso</option>
+                    <option value="metropolitana">Región Metropolitana</option>
+                    <option value="ohiggins">Región de O'Higgins</option>
+                    <option value="maule">Región del Maule</option>
+                    <option value="nuble">Región del Ñuble</option>
+                    <option value="biobio">Región del Biobío</option>
+                    <option value="araucania">Región de la Araucanía</option>
+                    <option value="rios">Región de los Ríos</option>
+                    <option value="lagos">Región de los Lagos</option>
+                    <option value="aysen">Región de Aysén</option>
+                    <option value="magallanes">Región de Magallanes</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje <span>(opcional)</span></label>
+                <textarea id="mensaje" name="mensaje" rows="3" placeholder="¿Algo más que quisieras agregar?"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Cotizar Ahora</button>
         </form>
     </section>
 
@@ -1063,17 +1133,30 @@
             e.preventDefault();
             
             const nombre = document.getElementById('nombre').value;
+            const email = document.getElementById('email').value;
             const telefono = document.getElementById('telefono').value;
             const edad = document.getElementById('edad').value;
-            const sistema = document.getElementById('sistema').value;
+            const rut = document.getElementById('rut').value;
+            const isapre = document.getElementById('isapre').value;
+            const sueldo = document.getElementById('sueldo').value;
+            const cargas = document.getElementById('cargas').value;
+            const region = document.getElementById('region').value;
+            const mensaje = document.getElementById('mensaje').value;
             
-            let mensaje = `Hola Gonzalo, quiero revisar mi plan de salud.%0A%0A`;
-            mensaje += `Nombre: ${nombre}%0A`;
-            mensaje += `Teléfono: ${telefono}%0A`;
-            if (edad) mensaje += `Edad: ${edad}%0A`;
-            if (sistema) mensaje += `Sistema actual: ${sistema}%0A`;
+            let texto = `Hola Gonzalo, necesito una cotización para mi plan de salud.%0A%0A`;
+            texto += `*Datos del cliente:*%0A`;
+            texto += `• Nombre: ${nombre}%0A`;
+            texto += `• Email: ${email}%0A`;
+            texto += `• Teléfono: ${telefono}%0A`;
+            texto += `• Edad: ${edad}%0A`;
+            if (rut) texto += `• RUT: ${rut}%0A`;
+            if (isapre) texto += `• Isapre actual: ${isapre}%0A`;
+            if (sueldo) texto += `• Rango de sueldo: ${sueldo}%0A`;
+            if (cargas) texto += `• Cargas familiares: ${cargas}%0A`;
+            if (region) texto += `• Región: ${region}%0A`;
+            if (mensaje) texto += `%0A*Mensaje:*%0A${mensaje}`;
             
-            window.open(`https://wa.me/56965107706?text=${mensaje}`, '_blank');
+            window.open(`https://wa.me/56965107706?text=${texto}`, '_blank');
         });
     </script>
 </body>
