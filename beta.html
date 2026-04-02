@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Principal -->
+    <title>Gonzalo Díaz | Asesor de Planes de Salud - Fonasa e Isapre Nueva Masvida</title>
+    <meta name="description" content="¿Estás pagando de más en tu plan de salud? Cotiza gratis con Gonzalo Díaz, asesor profesional de salud. Te ayudamos a encontrar el mejor plan de Isapre Nueva Masvida al mejor precio.">
+    <meta name="keywords" content="asesor de salud, cotizar plan de salud, fonasa, isapre, nueva masvida, cambio de plan de salud, mejor precio isapre, afiliación isapre, asesores de salud chile">
+    <meta name="author" content="Gonzalo Díaz">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://asesorensalud.github.io/nuevamasvida/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://asesorensalud.github.io/nuevamasvida/">
+    <meta property="og:title" content="Gonzalo Díaz | Asesor de Planes de Salud - Fonasa e Isapre Nueva Masvida">
+    <meta property="og:description" content="¿Estás pagando de más en tu plan de salud? Cotiza gratis. Asesoría profesional y transparente para encontrar el mejor plan de salud.">
+    <meta property="og:image" content="https://asesorensalud.github.io/nuevamasvida/gonzalo_diaz.jpeg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://asesorensalud.github.io/nuevamasvida/">
+    <meta property="twitter:title" content="Gonzalo Díaz | Asesor de Planes de Salud">
+    <meta property="twitter:description" content="¿Estás pagando de más en tu plan de salud? Cotiza gratis con asesoría profesional.">
+    <meta property="twitter:image" content="https://asesorensalud.github.io/nuevamasvida/gonzalo_diaz.jpeg">
+    
+    <!-- Geo Location -->
+    <meta name="geo.region" content="CL">
+    <meta name="geo.placename" content="Chile">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#003366">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="gonzalo_diaz.jpeg">
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Gonzalo Díaz - Asesor de Planes de Salud",
+        "description": "Asesoría profesional para Planes de Salud. Fonasa e Isapre Nueva Masvida. Encuentra el mejor plan para ti.",
+        "url": "https://asesorensalud.github.io/nuevamasvida/",
+        "telephone": "+56965107706",
+        "email": "afiliaciones@nuevamasvida.com",
+        "image": "https://asesorensalud.github.io/nuevamasvida/gonzalo_diaz.jpeg",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "CL",
+            "addressRegion": "Chile"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-33.4489",
+            "longitude": "-70.6693"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "18:00"
+        },
+        "priceRange": "$$",
+        "areaServed": {
+            "@type": "Country",
+            "name": "Chile"
+        },
+        "serviceType": ["Asesor de salud", "Cotización de planes de salud", "Afiliación Isapre", "Cambio de plan de salud"],
+        "provider": {
+            "@type": "Person",
+            "name": "Gonzalo Díaz"
+        }
+    }
+    </script>
+    
+    <style>
+        :root {
+            /* Nueva Masvida brand colors */
+            --azul-oscuro: #003366;
+            --azul-medio: #005b96;
+            --azul-claro: #00B4D8;
+            --dorado: #00B4D8;
+            --dorado-claro: #33c4e3;
+            --blanco: #ffffff;
+            --gris-claro: #f5f7fa;
+            --texto-gris: #4a5568;
+            --success: #00c853;
+            --error: #ef4444;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--blanco);
+            color: var(--azul-oscuro);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4 {
+            font-weight: 700;
+        }
+
+        /* Header */
+        header {
+            background: transparent;
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        header.scrolled {
+            background: var(--azul-oscuro);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: var(--azul-oscuro);
+            font-family: 'Inter', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .logo span {
+            color: var(--azul-claro);
+        }
+
+        .header-cta {
+            background: var(--azul-oscuro);
+            color: var(--blanco);
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            font-weight: 500;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .header-cta:hover {
+            background: var(--azul-medio);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: var(--blanco);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            color: var(--azul-oscuro);
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            color: var(--texto-gris);
+            font-size: 1.15rem;
+            font-weight: 300;
+            margin-bottom: 2.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-cta {
+            display: inline-block;
+            background: var(--azul-claro);
+            color: var(--blanco);
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            margin: 0.5rem;
+        }
+
+        .hero-cta:hover {
+            background: var(--dorado-claro);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 180, 216, 0.3);
+        }
+
+        .hero-cta-secondary {
+            background: transparent;
+            border: 2px solid var(--azul-claro);
+            color: var(--azul-claro);
+        }
+
+        .hero-cta-secondary:hover {
+            background: var(--azul-claro);
+            color: var(--blanco);
+        }
+
+        .hero-note {
+            color: var(--texto-gris);
+            font-size: 0.9rem;
+            margin-top: 1.5rem;
+        }
+
+        .hero-note span,
+        .check {
+            color: var(--success);
+        }
+
+        /* Pain Trigger Section */
+        .dolor {
+            padding: 4rem 2rem;
+            background: var(--blanco);
+            text-align: center;
+            border-bottom: 1px solid var(--gris-claro);
+        }
+
+        .dolor h2 {
+            color: var(--azul-oscuro);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .dolor h2 span {
+            color: var(--azul-claro);
+        }
+
+        .dolor-list {
+            max-width: 600px;
+            margin: 0 auto;
+            list-style: none;
+        }
+
+        .dolor-list li {
+            color: var(--texto-gris);
+            font-size: 1.1rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--gris-claro);
+        }
+
+        .dolor-list li:last-child {
+            border-bottom: none;
+        }
+
+        .dolor-cta {
+            display: inline-block;
+            margin-top: 2rem;
+            color: var(--azul-claro);
+            font-weight: 500;
+            text-decoration: underline;
+            font-size: 1.1rem;
+        }
+
+        /* Solution Section */
+        .solucion {
+            padding: 5rem 2rem;
+            background: var(--blanco);
+        }
+
+        .solucion-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .solucion h2 {
+            font-size: 2.5rem;
+            color: var(--azul-oscuro);
+            margin-bottom: 2rem;
+        }
+
+        .solucion h2 span {
+            color: var(--azul-claro);
+        }
+
+        .solucion-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .solucion-item {
+            padding: 1.5rem;
+        }
+
+        .solucion-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--azul-claro);
+        }
+
+        .solucion-item h3 {
+            font-size: 1.25rem;
+            color: var(--azul-oscuro);
+            margin-bottom: 0.5rem;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+        }
+
+        .solucion-item p {
+            color: var(--texto-gris);
+            font-size: 0.95rem;
+        }
+
+        /* Diferenciador Section */
+        .diferenciador-seccion {
+            padding: 4rem 2rem;
+            background: var(--gris-claro);
+            text-align: center;
+        }
+
+        .diferenciador-seccion h2 {
+            font-size: 2rem;
+            color: var(--azul-oscuro);
+            margin-bottom: 1rem;
+        }
+
+        .diferenciador-seccion h2 span {
+            color: var(--azul-claro);
+        }
+
+        .diferenciador-seccion > p {
+            color: var(--texto-gris);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .no-robot {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .no-robot-item {
+            text-align: center;
+            min-width: 150px;
+        }
+
+        .no-robot-item span {
+            display: block;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .no-robot-item p {
+            color: var(--texto-gris);
+            font-size: 0.9rem;
+        }
+
+        /* Microcompromiso */
+        .microcompromiso {
+            padding: 4rem 2rem;
+            background: var(--blanco);
+            text-align: center;
+            border-top: 1px solid var(--gris-claro);
+        }
+
+        .microcompromiso h2 {
+            color: var(--azul-oscuro);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .microcompromiso-steps {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .microcompromiso-step {
+            background: var(--gris-claro);
+            padding: 1.5rem 2rem;
+            border-radius: 8px;
+            min-width: 180px;
+        }
+
+        .microcompromiso-step span {
+            display: block;
+            font-size: 2rem;
+            color: var(--azul-claro);
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .microcompromiso-step p {
+            color: var(--texto-gris);
+            font-size: 0.95rem;
+        }
+
+        /* Prueba Social */
+        .prueba-social {
+            padding: 5rem 2rem;
+            background: var(--blanco);
+        }
+
+        .prueba-social h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--azul-oscuro);
+            margin-bottom: 3rem;
+        }
+
+        .prueba-social h2 span {
+            color: var(--azul-claro);
+        }
+
+        .testimonios-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .testimonio {
+            background: var(--gris-claro);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--azul-claro);
+        }
+
+        .testimonio p {
+            font-style: italic;
+            color: var(--texto-gris);
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .testimonio-author {
+            margin-top: 1rem;
+            color: var(--azul-oscuro);
+            font-weight: 500;
+        }
+
+        /* Beneficios Nueva Masvida */
+        .beneficios-nm {
+            padding: 5rem 2rem;
+            background: var(--blanco);
+            text-align: center;
+        }
+
+        .beneficios-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .beneficio-item {
+            padding: 1.5rem;
+            background: var(--gris-claro);
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .beneficio-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .beneficio-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .beneficio-item h3 {
+            font-size: 1.1rem;
+            color: var(--azul-oscuro);
+            margin-bottom: 0.5rem;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+        }
+
+        .beneficio-item p {
+            color: var(--texto-gris);
+            font-size: 0.9rem;
+        }
+
+        /* CTA Section */
+        .cta-fuerte {
+            padding: 4rem 2rem;
+            background: var(--blanco);
+            text-align: center;
+            border-top: 1px solid var(--gris-claro);
+        }
+
+        .cta-fuerte h2 {
+            color: var(--azul-oscuro);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-fuerte h2 span {
+            color: var(--azul-claro);
+        }
+
+        .cta-fuerte p {
+            color: var(--texto-gris);
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Urgencia */
+        .urgencia {
+            padding: 3rem 2rem;
+            background: var(--gris-claro);
+            text-align: center;
+        }
+
+        .urgencia p {
+            color: var(--texto-gris);
+            font-size: 1.1rem;
+        }
+
+        .urgencia p span {
+            color: var(--azul-oscuro);
+            font-weight: 600;
+        }
+
+        /* Cierre Humano */
+        .cierre-humano {
+            padding: 5rem 2rem;
+            background: var(--blanco);
+            text-align: center;
+        }
+
+        .cierre-humano h2 {
+            font-size: 2.5rem;
+            color: var(--azul-oscuro);
+            margin-bottom: 1rem;
+        }
+
+        .cierre-humano h2 span {
+            color: var(--azul-claro);
+        }
+
+        .cierre-humano > p {
+            color: var(--texto-gris);
+            font-size: 1.15rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        /* Comparativa Section */
+        .comparativa {
+            padding: 5rem 2rem;
+            background: var(--gris-claro);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--azul-oscuro);
+            margin-bottom: 3rem;
+        }
+
+        .section-title span {
+            color: var(--azul-claro);
+        }
+
+        .comparativa-grid {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .plan-card {
+            background: var(--blanco);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .plan-card.fonasa {
+            border-top: 4px solid #4a90d9;
+        }
+
+        .plan-card.isapre {
+            border-top: 4px solid var(--azul-claro);
+        }
+
+        .plan-header {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .plan-card.fonasa .plan-header {
+            background: #4a90d9;
+        }
+
+        .plan-card.isapre .plan-header {
+            background: var(--azul-claro);
+        }
+
+        .plan-card.isapre {
+            border-top: 4px solid var(--azul-claro);
+        }
+
+        .plan-header {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .plan-card.fonasa .plan-header {
+            background: #4a90d9;
+        }
+
+        .plan-card.isapre .plan-header {
+            background: var(--azul-claro);
+        }
+
+        .plan-header h3 {
+            font-size: 1.75rem;
+            color: var(--blanco);
+        }
+
+        .plan-features {
+            padding: 2rem;
+        }
+
+        .plan-features ul {
+            list-style: none;
+        }
+
+        .plan-features li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--gris-claro);
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .plan-features li:last-child {
+            border-bottom: none;
+        }
+
+        .cross {
+            color: var(--error);
+            font-weight: bold;
+        }
+
+        .plan-card.isapre .check {
+            color: var(--azul-claro);
+        }
+
+        /* Sobre Mí Section */
+        .sobre-mi {
+            padding: 5rem 2rem;
+            background: var(--blanco);
+        }
+
+        .sobre-mi-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .foto-container {
+            width: 380px;
+            height: 253px;
+            background: var(--azul-medio);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(10, 22, 40, 0.2);
+        }
+
+        .foto-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+        }
+
+        .sobre-mi-texto h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--azul-oscuro);
+        }
+
+        .sobre-mi-texto h2 span {
+            color: var(--azul-claro);
+        }
+
+        .sobre-mi-texto .cargo {
+            font-size: 1.1rem;
+            color: var(--azul-claro);
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+
+        .sobre-mi-texto p {
+            color: var(--texto-gris);
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .diferenciadores {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .diferenciador {
+            text-align: center;
+        }
+
+        .diferenciador-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .diferenciador span {
+            font-size: 0.9rem;
+            color: var(--texto-gris);
+        }
+
+        /* Contacto Section */
+        .contacto {
+            padding: 5rem 2rem;
+            background: var(--blanco);
+        }
+
+        .contacto .section-title {
+            color: var(--azul-oscuro);
+        }
+
+        .contacto .section-title span {
+            color: var(--azul-claro);
+        }
+
+        .formulario {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--blanco);
+            padding: 3rem;
+            border-radius: 8px;
+            border: 1px solid var(--gris-claro);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .form-row .form-group {
+            flex: 1;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--azul-oscuro);
+        }
+
+        .form-group label span {
+            color: var(--texto-gris);
+            font-weight: 400;
+            font-size: 0.875rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.875rem 1rem;
+            border: 1px solid #e5e5e5;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: 'Inter', sans-serif;
+            transition: border-color 0.3s ease;
+            background: var(--blanco);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--azul-claro);
+        }
+
+        .form-group select {
+            cursor: pointer;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: var(--azul-claro);
+            color: var(--blanco);
+            padding: 1rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background: var(--azul-medio);
+            box-shadow: 0 4px 15px rgba(0, 180, 216, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--blanco);
+            padding: 3rem 2rem;
+            text-align: center;
+            border-top: 1px solid var(--gris-claro);
+        }
+
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .footer-content p {
+            color: var(--texto-gris);
+            margin-bottom: 1rem;
+        }
+
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #25D366;
+            color: var(--blanco);
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-btn:hover {
+            background: #20BD5A;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .hero-cta {
+                display: block;
+                margin: 0.5rem auto;
+                max-width: 280px;
+            }
+
+            .solucion-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonios-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .beneficios-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .no-robot {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .microcompromiso-steps {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .comparativa-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .sobre-mi-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .foto-container {
+                margin: 0 auto;
+                width: 100%;
+                max-width: 380px;
+                height: auto;
+                aspect-ratio: 1536 / 1024;
+            }
+
+            .foto-container img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center top;
+            }
+
+            .diferenciadores {
+                justify-content: center;
+            }
+
+            .formulario {
+                padding: 2rem;
+            }
+
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">Gonzalo <span>Díaz</span></div>
+            <a href="https://wa.me/56965107706?text=Hola%20Gonzalo,%20quiero%20revisar%20si%20estoy%20pagando%20de%20m%C3%A1s%20en%20mi%20plan" class="header-cta" target="_blank">WhatsApp</a>
+        </div>
+    </header>
+
+    <!-- HERO: Directo a convertir -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>¿Estás pagando de más en tu plan de salud?</h1>
+            <p>Descúbrelo en minutos y recibe una opción mejor, clara y sin letra chica.</p>
+            <a href="https://wa.me/56965107706?text=Hola%20Gonzalo,%20quiero%20revisar%20si%20estoy%20pagando%20de%20m%C3%A1s%20en%20mi%20plan" class="hero-cta" target="_blank">Quiero saber si estoy pagando de más</a>
+            <a href="#contacto" class="hero-cta hero-cta-secondary">Evaluación gratuita</a>
+            <p class="hero-note"><span>✔</span> Respuesta inmediata por WhatsApp &nbsp;|&nbsp; <span>✔</span> Asesoría gratuita</p>
+        </div>
+    </section>
+
+    <!-- GATILLO DE DOLOR -->
+    <section class="dolor">
+        <h2>La mayoría de las personas paga de más <span>sin saberlo</span></h2>
+        <ul class="dolor-list">
+            <li>Planes mal elegidos</li>
+            <li>Coberturas que no usan</li>
+            <li>Costos ocultos</li>
+        </ul>
+        <a href="https://wa.me/56965107706?text=Hola%20Gonzalo,%20quiero%20revisar%20si%20estoy%20pagando%20de%20m%C3%A1s%20en%20mi%20plan" class="dolor-cta">👉 Podrías estar perdiendo dinero todos los meses</a>
+    </section>
+
+    <!-- SOLUCIÓN RÁPIDA -->
+    <section class="solucion">
+        <div class="solucion-content">
+            <h2>Yo reviso tu caso y te digo claramente:</h2>
+            <div class="solucion-grid">
+                <div class="solucion-item">
+                    <div class="solucion-icon">✓</div>
+                    <h3>Si tu plan actual te conviene</h3>
+                    <p>Análisis honesto de tu situación actual</p>
+                </div>
+                <div class="solucion-item">
+                    <div class="solucion-icon">↓</div>
+                    <h3>Si puedes pagar menos</h3>
+                    <p>Opciones para optimizar tu presupuesto</p>
+                </div>
+                <div class="solucion-item">
+                    <div class="solucion-icon">★</div>
+                    <h3>Qué opción es mejor para ti</h3>
+                    <p>Recomendación personalizada</p>
+                </div>
+            </div>
+            <p style="color: var(--texto-gris); font-size: 1.1rem;"><strong>Sin vueltas. Sin presión.</strong></p>
+        </div>
+    </section>
+
+    <!-- BENEFICIO PRINCIPAL -->
+    <section class="diferenciador-seccion">
+        <h2>En menos de unos minutos puedes:</h2>
+        <div class="no-robot">
+            <div class="no-robot-item">
+                <span>🔍</span>
+                <p>Saber si estás pagando de más</p>
+            </div>
+            <div class="no-robot-item">
+                <span>📖</span>
+                <p>Entender tu plan de verdad</p>
+            </div>
+            <div class="no-robot-item">
+                <span>📊</span>
+                <p>Ver una mejor alternativa</p>
+            </div>
+        </div>
+        <p style="margin-top: 2rem; color: var(--texto-gris);">👉 Todo explicado simple.</p>
+    </section>
+
+    <!-- DIFERENCIADOR FUERTE -->
+    <section class="solucion" style="background: var(--gris-claro);">
+        <div class="solucion-content">
+            <h2>Esto no es una cotización automática</h2>
+            <p style="color: var(--texto-gris); font-size: 1.15rem; margin-bottom: 2rem;">Es asesoría real.</p>
+            <div class="no-robot">
+                <div class="no-robot-item">
+                    <span>👤</span>
+                    <p>Hablas conmigo directamente</p>
+                </div>
+                <div class="no-robot-item">
+                    <span>🚫</span>
+                    <p>No robots</p>
+                </div>
+                <div class="no-robot-item">
+                    <span>📝</span>
+                    <p>No respuestas genéricas</p>
+                </div>
+                <div class="no-robot-item">
+                    <span>💡</span>
+                    <p>No información confusa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MICROCOMPROMISO -->
+    <section class="microcompromiso">
+        <h2>Solo necesitas:</h2>
+        <div class="microcompromiso-steps">
+            <div class="microcompromiso-step">
+                <span>1</span>
+                <p>Enviar un mensaje</p>
+            </div>
+            <div class="microcompromiso-step">
+                <span>2</span>
+                <p>Contar tu situación</p>
+            </div>
+            <div class="microcompromiso-step">
+                <span>3</span>
+                <p>Recibir tu recomendación</p>
+            </div>
+        </div>
+        <a href="https://wa.me/56965107706?text=Hola%20Gonzalo,%20quiero%20revisar%20mi%20plan" class="hero-cta" target="_blank">👉 Así de simple</a>
+    </section>
+
+    <!-- PRUEBA SOCIAL -->
+    <section class="prueba-social">
+        <h2>Personas como tú <span>ya están pagando menos</span> y mejorando su cobertura</h2>
+        <div class="testimonios-grid">
+            <div class="testimonio">
+                <p>"Pensé que era complicado, pero fue rápido y claro. Ahora pago menos y tengo mejor cobertura."</p>
+                <p class="testimonio-author">— Andrea J., Providencia</p>
+            </div>
+            <div class="testimonio">
+                <p>"La asesoría fue rápida y clara. Activé mi plan sin trámites presenciales y sin esperar semanas."</p>
+                <p class="testimonio-author">— Felipe P., Concepción</p>
+            </div>
+            <div class="testimonio">
+                <p>"Me ayudaron a encontrar un plan acorde a mi presupuesto. En menos de 48 horas hice el cambio."</p>
+                <p class="testimonio-author">— Carolina R., Antofagasta</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFICIOS NUEVA MASVIDA -->
+    <section class="beneficios-nm">
+        <h2 class="section-title">¿Por qué afiliarte a <span>Isapre Nueva Masvida</span>?</h2>
+        <div class="beneficios-grid">
+            <div class="beneficio-item">
+                <div class="beneficio-icon">🏥</div>
+                <h3>Cobertura hospitalaria</h3>
+                <p>Hasta 100% y ambulatoria hasta 80%</p>
+            </div>
+            <div class="beneficio-item">
+                <div class="beneficio-icon">🩺</div>
+                <h3>Cirugías con costo conocido</h3>
+                <p>Paquetes quirúrgicos</p>
+            </div>
+            <div class="beneficio-item">
+                <div class="beneficio-icon">🚑</div>
+                <h3>Urgencia integral</h3>
+                <p>Copago conocido</p>
+            </div>
+            <div class="beneficio-item">
+                <div class="beneficio-icon">💸</div>
+                <h3>Bonos costo $0</h3>
+                <p>Para exámenes en amplia red</p>
+            </div>
+            <div class="beneficio-item">
+                <div class="beneficio-icon">🎁</div>
+                <h3>Beneficios exclusivos</h3>
+                <p>En farmacias, ópticas, laboratorios y dental</p>
+            </div>
+            <div class="beneficio-item">
+                <div class="beneficio-icon">📲</div>
+                <h3>Atención personalizada</h3>
+                <p>Por Sucursal Virtual, App, WhatsApp y video</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FUERTE -->
+    <section class="cta-fuerte" id="contacto">
+        <h2>Revisa tu plan ahora <span>(es gratis)</span></h2>
+        <p>Sin compromiso. Sin letra chica.</p>
+        <a href="https://wa.me/56965107706?text=Hola%20Gonzalo,%20quiero%20mi%20evaluaci%C3%B3n%20gratuita" class="hero-cta" target="_blank">Hablar por WhatsApp</a>
+    </section>
+
+    <!-- FORMULARIO -->
+    <section class="contacto">
+        <h2 class="section-title">Obtén tu cotización <span>en minutos</span></h2>
+        <form class="formulario" id="contacto-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required placeholder="+56 9 XXXX XXXX">
+                </div>
+                <div class="form-group">
+                    <label for="edad">Edad</label>
+                    <input type="number" id="edad" name="edad" required placeholder="Tu edad" min="18" max="100">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="rut">RUT</label>
+                <input type="text" id="rut" name="rut" placeholder="12.345.678-5">
+            </div>
+            <div class="form-group">
+                <label for="isapre">Isapre Actual</label>
+                <select id="isapre" name="isapre">
+                    <option value="">Selecciona una opción</option>
+                    <option value="fonasa">Fonasa</option>
+                    <option value="banmedica">Banmédica S.A.</option>
+                    <option value="isalud">Isalud Ltda.</option>
+                    <option value="colmena">Colmena Golden Cross S.A.</option>
+                    <option value="consalud">Consalud</option>
+                    <option value="cruzblanca">Cruz Blanca S.A.</option>
+                    <option value="cruzdelnorte">Cruz del Norte Ltda.</option>
+                    <option value="nuevamasvida">Nueva Masvida S.A.</option>
+                    <option value="fundacion">Fundación Ltda.</option>
+                    <option value="vidatres">Vida Tres S.A.</option>
+                    <option value="esencial">Esencial S.A.</option>
+                    <option value="sin-sistema">Sin sistema de salud</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="sueldo">Rango de sueldo</label>
+                    <select id="sueldo" name="sueldo">
+                        <option value="">Selecciona una opción</option>
+                        <option value="900-1400">$900.000 - $1.400.000</option>
+                        <option value="1400-2500">$1.400.000 - $2.500.000</option>
+                        <option value="2500-mas">$2.500.000 o más</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cargas">Cantidad de Cargas</label>
+                    <select id="cargas" name="cargas">
+                        <option value="0">Sin Cargas</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 o más</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="region">Región</label>
+                <select id="region" name="region">
+                    <option value="">Selecciona tu Región</option>
+                    <option value="arica">Región de Arica y Parinacota</option>
+                    <option value="tarapaca">Región de Tarapacá</option>
+                    <option value="antofagasta">Región de Antofagasta</option>
+                    <option value="atacama">Región de Atacama</option>
+                    <option value="coquimbo">Región de Coquimbo</option>
+                    <option value="valparaiso">Región de Valparaíso</option>
+                    <option value="metropolitana">Región Metropolitana</option>
+                    <option value="ohiggins">Región de O'Higgins</option>
+                    <option value="maule">Región del Maule</option>
+                    <option value="nuble">Región del Ñuble</option>
+                    <option value="biobio">Región del Biobío</option>
+                    <option value="araucania">Región de la Araucanía</option>
+                    <option value="rios">Región de los Ríos</option>
+                    <option value="lagos">Región de los Lagos</option>
+                    <option value="aysen">Región de Aysén</option>
+                    <option value="magallanes">Región de Magallanes</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje <span>(opcional)</span></label>
+                <textarea id="mensaje" name="mensaje" rows="3" placeholder="¿Algo más que quisieras agregar?"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Cotizar Ahora</button>
+        </form>
+    </section>
+
+    <!-- URGENCIA SUAVE -->
+    <section class="urgencia">
+        <p>Mientras antes revises tu plan, <span>antes puedes dejar de pagar de más</span></p>
+    </section>
+
+    <!-- CIERRE HUMANO -->
+    <section class="cierre-humano">
+        <h2>No se trata de venderte un plan</h2>
+        <p>Se trata de ayudarte a elegir bien.</p>
+        <a href="https://wa.me/56965107706?text=Hola%20Gonzalo,%20quiero%20asesor%C3%ADa%20sobre%20mi%20plan%20de%20salud" class="hero-cta" target="_blank" style="display: inline-block; margin-top: 2rem;">👉 Escríbeme y lo vemos juntos</a>
+    </section>
+
+    <!-- COMPARATIVA -->
+    <section class="comparativa">
+        <h2 class="section-title"><span>Fonasa</span> vs <span>Isapre</span></h2>
+        <div class="comparativa-grid">
+            <div class="plan-card fonasa">
+                <div class="plan-header">
+                    <h3>Fonasa</h3>
+                </div>
+                <div class="plan-features">
+                    <ul>
+                        <li><span class="cross">✗</span> Largas esperas</li>
+                        <li><span class="cross">✗</span> Sistema público</li>
+                        <li><span class="cross">✗</span> Opciones limitadas</li>
+                        <li><span class="cross">✗</span> Sin atención preferente</li>
+                        <li><span class="cross">✗</span> Cobertura básica</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="plan-card isapre">
+                <div class="plan-header">
+                    <h3>Isapre Nueva Masvida</h3>
+                </div>
+                <div class="plan-features">
+                    <ul>
+                        <li><span class="check">✓</span> Atención rápida</li>
+                        <li><span class="check">✓</span> Clínicas privadas</li>
+                        <li><span class="check">✓</span> Más beneficios</li>
+                        <li><span class="check">✓</span> Atención preferente</li>
+                        <li><span class="check">✓</span> Cobertura amplia</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section class="sobre-mi">
+        <div class="sobre-mi-content">
+            <div class="foto-container">
+                <img src="gonzalo_diaz.jpeg" alt="Gonzalo Díaz - Asesor Profesional de Salud">
+            </div>
+            <div class="sobre-mi-texto">
+                <h2>Gonzalo <span>Díaz</span></h2>
+                <p class="cargo">Asesor Profesional de Salud</p>
+                <p>Con años de experiencia en el sector de salud privada, me dedico a ayudar a las personas a encontrar el plan de salud que mejor se adapte a sus necesidades y presupuesto.</p>
+                <p>Mi enfoque está en la transparencia y la cercanía. No vendo productos, sino que busco soluciones reales para cada cliente.</p>
+                <div class="diferenciadores">
+                    <div class="diferenciador">
+                        <div class="diferenciador-icon">🤝</div>
+                        <span>Cercanía</span>
+                    </div>
+                    <div class="diferenciador">
+                        <div class="diferenciador-icon">📋</div>
+                        <span>Transparencia</span>
+                    </div>
+                    <div class="diferenciador">
+                        <div class="diferenciador-icon">⭐</div>
+                        <span>Profesionalismo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>¿Prefieres contactarte directamente?</p>
+            <a href="https://wa.me/56965107706?text=Hola%20Gonzalo,%20quiero%20asesor%C3%ADa%20sobre%20planes%20de%20salud." class="whatsapp-btn" target="_blank">
+                💬 Escríbeme por WhatsApp
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        document.getElementById('contacto-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const nombre = document.getElementById('nombre').value;
+            const email = document.getElementById('email').value;
+            const telefono = document.getElementById('telefono').value;
+            const edad = document.getElementById('edad').value;
+            const rut = document.getElementById('rut').value;
+            const isapre = document.getElementById('isapre').value;
+            const sueldo = document.getElementById('sueldo').value;
+            const cargas = document.getElementById('cargas').value;
+            const region = document.getElementById('region').value;
+            const mensaje = document.getElementById('mensaje').value;
+            
+            let texto = `Hola Gonzalo, necesito una cotización para mi plan de salud.%0A%0A`;
+            texto += `*Datos del cliente:*%0A`;
+            texto += `• Nombre: ${nombre}%0A`;
+            texto += `• Email: ${email}%0A`;
+            texto += `• Teléfono: ${telefono}%0A`;
+            texto += `• Edad: ${edad}%0A`;
+            if (rut) texto += `• RUT: ${rut}%0A`;
+            if (isapre) texto += `• Isapre actual: ${isapre}%0A`;
+            if (sueldo) texto += `• Rango de sueldo: ${sueldo}%0A`;
+            if (cargas) texto += `• Cargas familiares: ${cargas}%0A`;
+            if (region) texto += `• Región: ${region}%0A`;
+            if (mensaje) texto += `%0A*Mensaje:*%0A${mensaje}`;
+            
+            window.open(`https://wa.me/56965107706?text=${texto}`, '_blank');
+        });
+    </script>
+</body>
+</html>
