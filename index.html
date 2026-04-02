@@ -362,11 +362,17 @@
             color: var(--azul-claro);
         }
 
-        .testimonio {
-            max-width: 700px;
+        .testimonios-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            max-width: 1000px;
             margin: 0 auto;
+        }
+
+        .testimonio {
             background: var(--gris-claro);
-            padding: 2rem;
+            padding: 1.5rem;
             border-radius: 8px;
             border-left: 4px solid var(--azul-claro);
         }
@@ -780,6 +786,10 @@
                 grid-template-columns: 1fr;
             }
 
+            .testimonios-grid {
+                grid-template-columns: 1fr;
+            }
+
             .no-robot {
                 flex-direction: column;
                 align-items: center;
@@ -953,9 +963,19 @@
     <!-- PRUEBA SOCIAL -->
     <section class="prueba-social">
         <h2>Personas como tú <span>ya están pagando menos</span> y mejorando su cobertura</h2>
-        <div class="testimonio">
-            <p>"Pensé que era complicado, pero fue rápido y claro. Ahora pago menos."</p>
-            <p class="testimonio-author">— Cliente satisfecho</p>
+        <div class="testimonios-grid">
+            <div class="testimonio">
+                <p>"Pensé que era complicado, pero fue rápido y claro. Ahora pago menos y tengo mejor cobertura."</p>
+                <p class="testimonio-author">— Andrea J., Providencia</p>
+            </div>
+            <div class="testimonio">
+                <p>"La asesoría fue rápida y clara. Activé mi plan sin trámites presenciales y sin esperar semanas."</p>
+                <p class="testimonio-author">— Felipe P., Concepción</p>
+            </div>
+            <div class="testimonio">
+                <p>"Me ayudaron a encontrar un plan acorde a mi presupuesto. En menos de 48 horas hice el cambio."</p>
+                <p class="testimonio-author">— Carolina R., Antofagasta</p>
+            </div>
         </div>
     </section>
 
