@@ -133,9 +133,9 @@
 
         .logo {
             color: var(--blanco);
-            font-family: 'Cormorant Garamond', serif;
+            font-family: 'Inter', sans-serif;
             font-size: 1.5rem;
-            font-weight: 600;
+            font-weight: 700;
         }
 
         .logo span {
@@ -143,8 +143,8 @@
         }
 
         .header-cta {
-            background: var(--azul-claro);
-            color: var(--blanco);
+            background: var(--blanco);
+            color: var(--azul-oscuro);
             padding: 0.75rem 1.5rem;
             text-decoration: none;
             font-weight: 500;
@@ -153,13 +153,13 @@
         }
 
         .header-cta:hover {
-            background: var(--dorado-claro);
+            background: var(--gris-claro);
             color: var(--azul-oscuro);
         }
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, var(--azul-oscuro) 0%, var(--azul-medio) 100%);
+            background: var(--blanco);
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -173,14 +173,14 @@
         }
 
         .hero h1 {
-            color: var(--blanco);
+            color: var(--azul-oscuro);
             font-size: 3rem;
             margin-bottom: 1.5rem;
             line-height: 1.2;
         }
 
         .hero p {
-            color: var(--gris-claro);
+            color: var(--texto-gris);
             font-size: 1.15rem;
             font-weight: 300;
             margin-bottom: 2.5rem;
@@ -605,11 +605,28 @@
         }
 
         .plan-card.fonasa {
+            border-top: 4px solid gray;
+        }
+
+        .plan-card.isapre {
             border-top: 4px solid #4a90d9;
         }
 
+        .plan-header {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .plan-card.fonasa .plan-header {
+            background: gray
+        }
+
+        .plan-card.isapre .plan-header {
+            background: #4a90d9;
+        }
+
         .plan-card.isapre {
-            border-top: 4px solid var(--azul-claro);
+            border-top: 4px solid #4a90d9;
         }
 
         .plan-header {
@@ -618,28 +635,11 @@
         }
 
         .plan-card.fonasa .plan-header {
-            background: #4a90d9;
+            background: gray;
         }
 
         .plan-card.isapre .plan-header {
-            background: var(--azul-claro);
-        }
-
-        .plan-card.isapre {
-            border-top: 4px solid var(--azul-claro);
-        }
-
-        .plan-header {
-            padding: 2rem;
-            text-align: center;
-        }
-
-        .plan-card.fonasa .plan-header {
             background: #4a90d9;
-        }
-
-        .plan-card.isapre .plan-header {
-            background: var(--azul-claro);
         }
 
         .plan-header h3 {
@@ -848,10 +848,10 @@
 
         /* Footer */
         footer {
-            background: var(--gris-claro);
+            background: var(--blanco);
             padding: 3rem 2rem;
             text-align: center;
-            border-top: 1px solid #e2e8f0;
+            border-top: 1px solid var(--gris-claro);
         }
 
         .footer-content {
@@ -963,7 +963,7 @@
 <body>
     <header>
         <div class="header-content">
-            <div class="logo">Gonzalo <span>Díaz</span></div>
+            <div class="logo"><span>Gonzalo Díaz</span></div>
             <a href="https://wa.me/56965107706?text=Hola%20Gonzalo,%20quiero%20revisar%20si%20estoy%20pagando%20de%20m%C3%A1s%20en%20mi%20plan" class="header-cta" target="_blank">WhatsApp</a>
         </div>
     </header>
@@ -1256,7 +1256,7 @@
 
     <!-- COMPARATIVA -->
     <section class="comparativa">
-        <h2 class="section-title"><span>Fonasa</span> vs <span>Isapre</span></h2>
+        <h2 class="section-title"><span style="font-style:var(--texto-gris);">Fonasa</span> vs <span>Isapre</span></h2>
         <div class="comparativa-grid">
             <div class="plan-card fonasa">
                 <div class="plan-header">
@@ -1293,7 +1293,7 @@
     <section class="sobre-mi">
         <div class="sobre-mi-content">
             <div class="foto-container">
-            <img src="gdiaz2.png" alt="Gonzalo Díaz - Asesor Profesional de Salud">
+                <img src="gdiaz2.png" alt="Gonzalo Díaz - Asesor Profesional de Salud">
             </div>
             <div class="sobre-mi-texto">
                 <h2>Gonzalo <span>Díaz</span></h2>
