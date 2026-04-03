@@ -1202,14 +1202,16 @@
             <div class="form-row">
                 <div class="form-group">
                     <label for="sueldo">Rango de sueldo</label>
-                    <select id="sueldo" name="sueldo">
+                    <select id="sueldo" name="sueldo" onchange="toggleSueldoInput()">
                         <option value="">Selecciona una opción</option>
                         <option value="500-1000">$500.000 - $1.000.000</option>
                         <option value="1000-1500">$1.000.000 - $1.500.000</option>
                         <option value="1500-2000">$1.500.000 - $2.000.000</option>
                         <option value="2000-2500">$2.000.000 - $2.500.000</option>
                         <option value="2500-mas">$2.500.000 o más</option>
+                        <option value="otro">Ingresar monto exacto</option>
                     </select>
+                    <input type="number" id="sueldo-otro" name="sueldo_otro" placeholder="Ingresa tu ingreso mensual" min="0" step="10000" style="display: none; margin-top: 0.5rem;">
                 </div>
                 <div class="form-group">
                     <label for="cargas">Cantidad de Cargas</label>
@@ -1339,6 +1341,19 @@
     </footer>
 
     <script>
+        function toggleSueldoInput() {
+            const select = document.getElementById('sueldo');
+            const input = document.getElementById('sueldo-otro');
+            if (select.value === 'otro') {
+                input.style.display = 'block';
+                input.setAttribute('required', 'required');
+            } else {
+                input.style.display = 'none';
+                input.removeAttribute('required');
+                input.value = '';
+            }
+        }
+
         document.getElementById('contacto-form').addEventListener('submit', function(e) {
             e.preventDefault();
             
@@ -1348,7 +1363,8 @@
             const edad = document.getElementById('edad').value;
             const rut = document.getElementById('rut').value;
             const isapre = document.getElementById('isapre').value;
-            const sueldo = document.getElementById('sueldo').value;
+            const sueldoSelect = document.getElementById('sueldo').value;
+            const sueldoOtro = document.getElementById('sueldo-otro').value;
             const cargas = document.getElementById('cargas').value;
             const region = document.getElementById('region').value;
             const mensaje = document.getElementById('mensaje').value;
@@ -1361,7 +1377,11 @@
             texto += `• Edad: ${edad}%0A`;
             if (rut) texto += `• RUT: ${rut}%0A`;
             if (isapre) texto += `• Isapre actual: ${isapre}%0A`;
-            if (sueldo) texto += `• Rango de sueldo: ${sueldo}%0A`;
+            if (sueldoSelect === 'otro' && sueldoOtro) {
+                texto += `• Ingreso mensual: $${parseInt(sueldoOtro).toLocaleString('es-CL')}%0A`;
+            } else if (sueldoSelect) {
+                texto += `• Rango de sueldo: ${sueldoSelect}%0A`;
+            }
             if (cargas) texto += `• Cargas familiares: ${cargas}%0A`;
             if (region) texto += `• Región: ${region}%0A`;
             if (mensaje) texto += `%0A*Mensaje:*%0A${mensaje}`;
